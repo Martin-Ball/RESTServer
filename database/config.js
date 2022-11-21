@@ -9,6 +9,7 @@ const dbConnection = async() => {
         console.log('Database connected successfully')
 
     } catch (error) {
+        console.log(process.env.MONGODB_CONN)
         console.log(error)
         throw new Error('Error to init at db')
     }
