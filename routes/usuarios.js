@@ -5,7 +5,7 @@ const { esRoleValido, emailExiste, existeUsuarioPorID } = require('../helpers/db
 const { usuariosGet, usuariosPost, usuariosPut, usuariosPatch, usuariosDelete } = require('../controllers/usuarios')
 
 const { validarCampos } = require('../middlewares/validar-campos')
-const { validarJWT } = require('../middlewares/validat-jwt')
+const { validarJWT } = require('../middlewares/validar-jwt')
 const { esAdminRole, tieneRole } = require('../middlewares/validar-roles')
 
 const router = Router()
