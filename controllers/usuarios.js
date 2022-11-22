@@ -73,10 +73,15 @@ const usuariosPatch = (req, res = response) => {
 const usuariosDelete = async(req, res = response) => {
 
     const { id } = req.params;
+
+    const uid = req.uid
     const usuario = await Usuario.findByIdAndUpdate( id, { estado: false } );
 
+    if(usuarioAutenticado.rol = 'ADMIN_ROLE'){
+
+    }
     
-    res.json(usuario);
+    res.json({usuario, uid});
 }
 
 module.exports = {
