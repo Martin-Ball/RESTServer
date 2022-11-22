@@ -76,10 +76,6 @@ const usuariosDelete = async(req, res = response) => {
 
     const uid = req.uid
     const usuario = await Usuario.findByIdAndUpdate( id, { estado: false } );
-
-    if(usuarioAutenticado.rol = 'ADMIN_ROLE'){
-
-    }
     
     res.json({usuario, uid});
 }
