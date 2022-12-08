@@ -4,6 +4,7 @@ const { v4: uuidv4 } = require('uuid');
 const subirArchivo = ( files, extensionesValidas = ['png', 'jpg', 'jpeg', 'gif'], carpeta = '' ) => {
 
     return new Promise( (resolve, reject) => {
+
         const { archivo } = files;
 
         //verificar la extension
