@@ -120,7 +120,7 @@ const mostrarImagen = async (req, res = response) => {
         const pathImagen = path.join( __dirname, '../uploads/', coleccion, modelo.img)
 
         if( fs.existsSync(pathImagen)){
-            return res.sendFile(pathImagen)
+            return res.sendFile(pathImagen)  //Este path lo puedo enviar para ser renderizado en front sin enviar el archivo
         }
     }
 
