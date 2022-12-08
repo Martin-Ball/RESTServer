@@ -169,7 +169,7 @@ const actualizarImagenCloudinary = async (req, res = response) => {
         const nombre = nombreArr[ nombreArr.length - 1 ]
         const [ public_id ] = nombre.split('.')
 
-        //borrar de cloudinary
+        //borrar de cloudinary 
         cloudinary.uploader.destroy( public_id )
     }
 
